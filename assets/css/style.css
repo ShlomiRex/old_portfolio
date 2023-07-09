@@ -58,6 +58,7 @@
   --white-2: hsl(0, 0%, 98%);
   --orange-yellow-crayola: hsl(45, 100%, 72%);
   --vegas-gold: hsl(45, 54%, 58%);
+  --vegas-gold-shaded: hsl(45, 39%, 48%);
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
@@ -1891,4 +1892,37 @@ textarea.form-input::-webkit-resizer { display: none; }
 .recommendors-email-link {
   color: white;
   display: inline;
+}
+
+.timeline-text-list li {
+  list-style: disc;
+}
+
+
+
+.collapsable-pdf-button {
+  cursor: pointer;
+  color: var(--smoky-black);
+  text-align: center;
+  background-color: var(--vegas-gold);
+  border: 1px solid white;
+  border-radius: 20px;
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.active .collapsable-pdf-button:hover {
+  background-color: var(--vegas-gold-shaded);
+}
+
+.collapsable-pdf-content {
+  display: none;
+  overflow: hidden;
+  width: min-content;
+  background-color: #f1f1f1;
+  transition: var(--transition-2);
+  margin: auto;
+  animation: fade 0.5s ease;
+  border-radius: 20px;
 }

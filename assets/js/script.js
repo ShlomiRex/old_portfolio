@@ -157,3 +157,31 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+
+
+
+var coll = document.getElementsByClassName("collapsable-pdf-button");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  var btn = coll[i];
+  btn.addEventListener("click", function () {
+    console.log(this);
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;;
+    if (content == null){
+      content = this.parentElement.nextElementSibling;
+    }
+    console.log(content);
+    if (content.style.display === "block") {
+      // Collapse
+      content.style.display = "none";
+      this.style.width = '';
+    } else {
+      // Expand
+      content.style.display = "block";
+      this.style.width = content.children[0].width;
+    }
+  });
+}
