@@ -1206,10 +1206,10 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .form-btn:hover::before { background: var(--bg-gradient-yellow-2); }
 
-.form-btn:disabled {
+/* .form-btn:disabled {
   opacity: 0.7;
   cursor: not-allowed;
-}
+} */
 
 .form-btn:disabled:hover { background: var(--border-gradient-onyx); }
 
