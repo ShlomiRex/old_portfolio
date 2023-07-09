@@ -1926,3 +1926,18 @@ textarea.form-input::-webkit-resizer { display: none; }
   animation: fade 0.5s ease;
   border-radius: 20px;
 }
+
+
+.blog-text {
+  color: var(--light-gray);
+
+}
+
+.blog-link {
+  color: var(--vegas-gold);
+  display: inline;
+}
+
+.blog-link:hover {
+  color: var(--vegas-gold-shaded);
+}
