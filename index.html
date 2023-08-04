@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shlomi Domnenko's Personal Portfolio</title>
+  <title>Shlomi's Personal Portfolio</title>
 
   <!--
     - favicon
@@ -165,23 +165,23 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <a class="navbar-link" href="#about" data-nav-link>About</a>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <a class="navbar-link" href="#resume" data-nav-link>Resume</a>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <a class="navbar-link" href="#projects" data-nav-link>Projects</a>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
+            <a class="navbar-link" href="#blog" data-nav-link>Blog</a>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
+            <a class="navbar-link" href="#contact" data-nav-link>Contact</a>
           </li>
 
         </ul>
@@ -196,7 +196,7 @@
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+      <article class="about" data-page="about">
 
         <header>
           <h2 class="h2 article-title">About me</h2>
@@ -539,13 +539,12 @@
 
               <p class="timeline-text">
                 Current GPA: 89. Semesters left: 3 <br>
-
-                <button type="button" class="collapsable-pdf-button">Academic transcript</button>
-              <div class="collapsable-pdf-content">
-                <embed src="assets/pdf/msc_academic_transcript.pdf" width="750px" height="800px" />
-              </div>
-
               </p>
+              <ul>
+                <li>
+                  <a class="download-pdf" target="_blank" href="assets/pdf/msc_academic_transcript.pdf">Download academic transcript</a>
+                </li>
+              </ul>
 
             </li>
 
@@ -560,17 +559,11 @@
                 Graduated. GPA: 82. Cyber Security Program
               </p>
 
-              <button type="button" class="collapsable-pdf-button">Gradiation papers</button>
-              <div class="collapsable-pdf-content">
-                <embed src="assets/pdf/bsc_academic_graduation.pdf" width="750px" height="800px" />
-              </div>
+              <a class="download-pdf" target="_blank" href="assets/pdf/bsc_academic_graduation.pdf">Download graduation papers</a>
 
               <br>
 
-              <button type="button" class="collapsable-pdf-button">Academic transcript</button>
-              <div class="collapsable-pdf-content">
-                <embed src="assets/pdf/bsc_academic_transcript.pdf" width="750px" height="800px" />
-              </div>
+              <a class="download-pdf" target="_blank" href="assets/pdf/bsc_academic_transcript.pdf">Download academic transcript</a>
 
             </li>
 
@@ -647,13 +640,13 @@
 
 
       <!--
-        - #PORTFOLIO
+        - #PROJECTS
       -->
 
-      <article class="portfolio" data-page="portfolio">
+      <article class="projects" data-page="projects">
 
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <h2 class="h2 article-title">Projects</h2>
         </header>
 
         <section class="projects">
@@ -758,7 +751,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-2.png" loading="lazy">
+                  <img src="./assets/images/project-2.gif" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">NES Emulator</h3>
@@ -930,6 +923,38 @@
 
           <ul class="blog-posts-list">
 
+            <!-- How I optimized Java Swing pixel drawing in terms of CPU, memory, and GPU -->
+            <li class="blog-post-item">
+              <a href="https://shlomirex.github.io/blog/How-I-optimized-Java-Swing-pixel-drawing" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.gif" alt="How I optimized Java Swing pixel drawing in terms of CPU, memory, and GPU" 
+                  loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Emulator</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2023-07-02">Aug 02, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">How I optimized Java Swing pixel drawing in terms of CPU, memory, and GPU</h3>
+
+                  <p class="blog-text">
+                    In this post, I’ll show you how I optimize code for drawing pixels in Java Swing,
+                    I am trying to squash CPU and memory regressions in my NES emulator.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <!-- How to create an operation system from scratch -->
             <li class="blog-post-item">
               <a href="https://shlomirex.github.io/blog/how-to-create-an-operation-system-from-scratch" target="_blank">
 
@@ -958,6 +983,7 @@
               </a>
             </li>
 
+            <!-- Why linux sucks for desktop users -->
             <li class="blog-post-item">
               <a href="https://shlomirex.github.io/blog/Why-linux-sucks-for-desktop-users" target="_blank">
 

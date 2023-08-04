@@ -158,30 +158,22 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
+// Find # hashtag and click on the article page
+document.addEventListener('DOMContentLoaded', function () {
+  const hash = window.location.hash;
+  if (hash) {
+    const targetId = hash.slice(1); // Remove the '#' symbol
 
-
-
-var coll = document.getElementsByClassName("collapsable-pdf-button");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  var btn = coll[i];
-  btn.addEventListener("click", function () {
-    console.log(this);
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;;
-    if (content == null){
-      content = this.parentElement.nextElementSibling;
+    for (let i = 0; i < navigationLinks.length; i++) {
+      const navLink = navigationLinks[i];
+      if (navLink.innerHTML.toLowerCase() == targetId.toLowerCase()) {
+        navLink.click();
+        return;
+      }
     }
-    console.log(content);
-    if (content.style.display === "block") {
-      // Collapse
-      content.style.display = "none";
-      this.style.width = '';
-    } else {
-      // Expand
-      content.style.display = "block";
-      this.style.width = content.children[0].width;
-    }
-  });
-}
+  }
+
+  // In any failed case, we set About to active.
+  const about_article = navigationLinks[0];
+  about_article.click();
+});

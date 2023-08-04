@@ -1900,34 +1900,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 
-.collapsable-pdf-button {
-  cursor: pointer;
-  color: var(--smoky-black);
-  text-align: center;
-  background-color: var(--vegas-gold);
-  border: 1px solid white;
-  border-radius: 20px;
-  margin: auto;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.active .collapsable-pdf-button:hover {
-  background-color: var(--vegas-gold-shaded);
-}
-
-.collapsable-pdf-content {
-  display: none;
-  overflow: hidden;
-  width: min-content;
-  background-color: #f1f1f1;
-  transition: var(--transition-2);
-  margin: auto;
-  animation: fade 0.5s ease;
-  border-radius: 20px;
-}
-
-
 .blog-text {
   color: var(--light-gray);
 
@@ -1940,4 +1912,13 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .blog-link:hover {
   color: var(--vegas-gold-shaded);
+}
+
+
+
+
+
+.download-pdf {
+  display: contents;
+  color: var(--vegas-gold);
 }
