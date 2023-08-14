@@ -10,7 +10,7 @@
   <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/logo.svg" >
+  <link rel="shortcut icon" href="./assets/images/logo.svg">
 
   <!--
     - custom css link
@@ -542,7 +542,8 @@
               </p>
               <ul>
                 <li>
-                  <a class="download-pdf" target="_blank" href="assets/pdf/msc_academic_transcript.pdf">Download academic transcript</a>
+                  <a class="download-pdf" target="_blank" href="assets/pdf/msc_academic_transcript.pdf">Download
+                    academic transcript</a>
                 </li>
               </ul>
 
@@ -559,11 +560,13 @@
                 Graduated. GPA: 82. Cyber Security Program
               </p>
 
-              <a class="download-pdf" target="_blank" href="assets/pdf/bsc_academic_graduation.pdf">Download graduation papers</a>
+              <a class="download-pdf" target="_blank" href="assets/pdf/bsc_academic_graduation.pdf">Download graduation
+                papers</a>
 
               <br>
 
-              <a class="download-pdf" target="_blank" href="assets/pdf/bsc_academic_transcript.pdf">Download academic transcript</a>
+              <a class="download-pdf" target="_blank" href="assets/pdf/bsc_academic_transcript.pdf">Download academic
+                transcript</a>
 
             </li>
 
@@ -668,7 +671,7 @@
             <li class="filter-item">
               <button data-filter-btn>Operation Systems</button>
             </li>
-            
+
             <li class="filter-item">
               <button data-filter-btn>Emulator</button>
             </li>
@@ -735,9 +738,18 @@
                   <img src="./assets/images/project-1.png" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">OS From Scratch</h3>
+                <div class="project-content">
 
-                <p class="project-category">Operation Systems</p>
+                  <h3 class="project-title">OS From Scratch</h3>
+
+                  <p class="project-category">Operation Systems</p>
+
+                  <p class="project-text">A basic bootloader written in assembly and basic kernel written in C++.
+                    I was always fascinated with the linux kernel, and I wanted to learn how to write one completely from scratch.
+                    This projects allows me to write full kernel with memory management, process management, and drivers.
+                  </p>
+
+                </div>
 
               </a>
             </li>
@@ -754,9 +766,18 @@
                   <img src="./assets/images/project-2.gif" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">NES Emulator</h3>
+                <div class="project-content">
+                  <h3 class="project-title">NES Emulator</h3>
 
-                <p class="project-category">Emulator</p>
+                  <p class="project-category">Emulator</p>
+
+                  <p class="project-text">
+                    This is my attempt to create basic NES emulator in Java.
+                    My goal is to run NES games (particularly Super Mario Bros), and learn how to write emulators. 
+                    I learned 6502 assembly, hardware emulation and optimizations. This emulator comes with a debugger for CPU and PPU
+                    and assembly viewer.
+                  </p>
+                </div>
 
               </a>
             </li>
@@ -773,9 +794,17 @@
                   <img src="./assets/images/project-3.gif" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Chip-8 Emulator</h3>
+                <div class="project-content">
+                  <h3 class="project-title">Chip-8 Emulator</h3>
 
-                <p class="project-category">Emulator</p>
+                  <p class="project-category">Emulator</p>
+  
+                  <p class="project-text">
+                    A chip-8 emulator written in Java.
+                    I wrote it as prerequisites for my Nintendo Entertainment System emulator (NES).
+                    CHIP-8 is an interpreted programming language that runs on a virtual machine. It runs on 1802 microprocessor.
+                  </p>
+                </div>
 
               </a>
             </li>
@@ -792,9 +821,17 @@
                   <img src="./assets/images/project-4.png" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">e-xterm</h3>
+                <div class="project-content">
+                  <h3 class="project-title">e-xterm</h3>
 
-                <p class="project-category">Web Applications</p>
+                  <p class="project-category">Web Applications</p>
+  
+                  <p class="project-text">
+                    Cross-platform (Windows, Mac, Linux) electron based SSH client, with managed bookmarks, and tab system for managing sessions.
+                    Written in Electron framework, Typescript, and React.
+                    Also comes with SFTP support and drag-and-drop remote file explorer, and remote monitoring tools.
+                  </p>
+                </div>
 
               </a>
             </li>
@@ -811,10 +848,16 @@
                   <img src="./assets/images/project-5.png" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Kaminsky Attack</h3>
-
-                <p class="project-category">Cyber</p>
-
+                <div class="project-content">
+                  <h3 class="project-title">Kaminsky Attack</h3>
+                  <p class="project-category">Cyber</p>
+                  <p class="project-text">
+                    The kaminsky-attack is a DNS cache poisoning attack - my implementation is written in pure C with extremely high performance.
+                    We attack the nameservers of the target domain, and inject malicious DNS records into the cache of the nameserver.
+                    The attack was first presented in blackhat 2008, and allows the attacker to redirect traffic to malicious servers.
+                    The attack is based on the fact that DNS uses UDP protocol, and is vulnerable to spoofing.
+                  </p>
+                </div>
               </a>
             </li>
 
@@ -830,9 +873,16 @@
                   <img src="./assets/images/project-6.png" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">raspberrypi-wardrive</h3>
-
-                <p class="project-category">Cyber</p>
+                <div class="project-content">
+                  <h3 class="project-title">raspberrypi-wardrive</h3>
+                  <p class="project-category">Cyber</p>
+                  <p class="project-text">
+                    Deauthenticate all networks with Raspberry Pi Zero-W with minimal effort.
+                    Just run 1 command and put raspberry pi zero w in your backpack and the raspberry pi won't stop de-authenticating.
+                    When you get further away from WiFi AP, the script will adjust the best network target to de-authenticate.
+                    The script also saves information about Access Points you visited in your travels as CSV so you can later at home analyze all MAC's, ESSID's, and more.
+                  </p>
+                </div>
 
               </a>
             </li>
@@ -849,9 +899,15 @@
                   <img src="./assets/images/project-7.jpg" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">EvilTwin Wifi Attack</h3>
-
-                <p class="project-category">Cyber</p>
+                <div class="project-content">
+                  <h3 class="project-title">EvilTwin Wifi Attack</h3>
+                  <p class="project-category">Cyber</p>
+                  <p class="project-text">
+                    Create wifi AP that enables users to browse the internet, but in reality, the attacker can sniff all the traffic.
+                    This attack also creates evil-portal that can be used to steal credentials from users.
+                    For example, if the user tries to connect to Facebook, the user will be redirected to fake Facebook login page, and their credentials will be stolen.
+                  </p>
+                </div>
 
               </a>
             </li>
@@ -868,13 +924,20 @@
                   <img src="./assets/images/project-8.gif" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Game of Life</h3>
-
-                <p class="project-category">Applications</p>
+                <div class="project-content">
+                  <h3 class="project-title">Game of Life</h3>
+                  <p class="project-category">Applications</p>
+                  <p class="project-text">
+                    Game of Life game written in Python. Game of life is a cellular automaton devised by the British mathematician John Horton Conway in 1970.
+                    The game is a zero-player game, meaning that its evolution is determined by its initial state, requiring no further input.
+                    The result is interesting evolution patterns over time.
+                  </p>
+                </div>
 
               </a>
             </li>
 
+            <!-- OCR Font Classifier -->
             <li class="project-item  active" data-filter-item data-category="applications">
               <a href="https://github.com/ShlomiRex/ocr-font-classifier-model" target="_blank">
 
@@ -886,9 +949,16 @@
                   <img src="./assets/images/project-9.png" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">OCR Font Classifier</h3>
-
-                <p class="project-category">Applications</p>
+                <div class="project-content">
+                  <h3 class="project-title">OCR Font Classifier</h3>
+                  <p class="project-category">Applications</p>
+                  <p class="project-text">
+                    An OCR (optical character recognition) font classifier. It detects the font of the text in the image. 
+                    The model is trained on 5 different fonts. It can predict correctly the font in 96% accuracy.
+                    The model was trained on 1684 images which contain 46,503 samples (characters and their font).
+                    I used Python and Tensorflow.
+                  </p>
+                </div>
 
               </a>
             </li>
@@ -915,7 +985,8 @@
 
 
         <p class="blog-text">
-          Link to my blog: <a href="https://shlomirex.github.io/blog" target="_blank" class="blog-link">shlomirex.github.io/blog</a>
+          Link to my blog: <a href="https://shlomirex.github.io/blog" target="_blank"
+            class="blog-link">shlomirex.github.io/blog</a>
         </p>
         <br>
 
@@ -928,8 +999,8 @@
               <a href="https://shlomirex.github.io/blog/How-I-optimized-Java-Swing-pixel-drawing" target="_blank">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.gif" alt="How I optimized Java Swing pixel drawing in terms of CPU, memory, and GPU" 
-                  loading="lazy">
+                  <img src="./assets/images/blog-3.gif"
+                    alt="How I optimized Java Swing pixel drawing in terms of CPU, memory, and GPU" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
@@ -942,7 +1013,8 @@
                     <time datetime="2023-07-02">Aug 02, 2023</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">How I optimized Java Swing pixel drawing in terms of CPU, memory, and GPU</h3>
+                  <h3 class="h3 blog-item-title">How I optimized Java Swing pixel drawing in terms of CPU, memory, and
+                    GPU</h3>
 
                   <p class="blog-text">
                     In this post, I’ll show you how I optimize code for drawing pixels in Java Swing,
@@ -959,7 +1031,8 @@
               <a href="https://shlomirex.github.io/blog/how-to-create-an-operation-system-from-scratch" target="_blank">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.png" alt="How to create an operation system from scratch" loading="lazy">
+                  <img src="./assets/images/blog-1.png" alt="How to create an operation system from scratch"
+                    loading="lazy">
                 </figure>
 
                 <div class="blog-content">
@@ -975,7 +1048,8 @@
                   <h3 class="h3 blog-item-title">How to create an operation system from scratch</h3>
 
                   <p class="blog-text">
-                    A step-by-step guide to create your own operating system from scratch. The bootloader is written in Assembly x86 and the kernel in C++.
+                    A step-by-step guide to create your own operating system from scratch. The bootloader is written in
+                    Assembly x86 and the kernel in C++.
                   </p>
 
                 </div>
@@ -1034,9 +1108,10 @@
 
         <section class="mapbox" data-mapbox>
           <figure>
-            <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54084.90606635978!2d34.75596055145569!3d32.087997525656284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4ca6193b7c1f%3A0xc1fb72a2c0963f90!2sTel%20Aviv-Yafo!5e0!3m2!1sen!2sil!4v1688911362618!5m2!1sen!2sil" 
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54084.90606635978!2d34.75596055145569!3d32.087997525656284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4ca6193b7c1f%3A0xc1fb72a2c0963f90!2sTel%20Aviv-Yafo!5e0!3m2!1sen!2sil!4v1688911362618!5m2!1sen!2sil"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
             <!-- <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
               width="400" height="300" loading="lazy"></iframe> -->
