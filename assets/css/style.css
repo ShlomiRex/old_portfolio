@@ -1281,6 +1281,9 @@ textarea.form-input::-webkit-resizer { display: none; }
   .sidebar, article {
     width: 520px;
     margin-inline: auto;
+  }
+
+  article {
     padding: 30px;
   }
 
