@@ -933,7 +933,10 @@ main {
   margin-bottom: 10px;
 }
 
-.project-item { display: none; }
+.project-item { 
+  display: none; 
+  height: fit-content;
+}
 
 .project-item.active {
   display: block;
