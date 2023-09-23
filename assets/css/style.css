@@ -1967,3 +1967,13 @@ textarea.form-input::-webkit-resizer { display: none; }
 .project-content {
   padding: 25px;
 }
+
+p.text {
+  color: var(--light-gray);
+}
+
+div.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
