@@ -1961,6 +1961,10 @@ p.text {
   color: var(--light-gray);
 }
 
+.text {
+  color: var(--light-gray);
+}
+
 div.center {
   display: flex;
   align-items: center;
